@@ -48,7 +48,7 @@ public class IntegrityChecker {
         } catch (Exception ignored) {}
 
         if (excludedPlugins == null)
-            excludedPlugins = Collections.EMPTY_LIST;
+            excludedPlugins = Collections.emptyList();
 
         for (IndexedPlugin plugin : pluginContext.getPlugins()) {
             String plugName = plugin.getName();
